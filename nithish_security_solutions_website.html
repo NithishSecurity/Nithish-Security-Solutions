@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nithish Security Solutions - Professional CCTV and Biometric service calls in Chennai. IP Camera, Analog Camera, WiFi Camera and Biometric service support.">
+<title>Nithish Security Solutions | CCTV & Biometric Service</title>
+<style>
+:root{
+  --navy:#071b3a; --blue:#087ee8; --cyan:#19c7ff; --light:#f4f8fc;
+  --text:#17233a; --muted:#637087; --white:#fff; --border:#dfe8f2;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--navy)}
+.logo{width:46px;height:46px;border-radius:14px;background:linear-gradient(145deg,var(--blue),var(--navy));display:grid;place-items:center;color:white;font-size:23px;box-shadow:0 8px 24px rgba(8,126,232,.25)}
+.brand span{display:block;font-size:18px;letter-spacing:.4px}
+.brand small{display:block;font-size:10px;letter-spacing:2px;color:var(--blue)}
+nav{display:flex;gap:26px;font-size:14px;font-weight:700}
+nav a:hover{color:var(--blue)}
+.menu{display:none;background:none;border:0;font-size:27px;color:var(--navy)}
+.hero{background:radial-gradient(circle at 85% 20%,rgba(25,199,255,.25),transparent 30%),linear-gradient(135deg,#061735 0%,#092c5e 55%,#075da7 100%);color:white;padding:92px 0 78px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.2);padding:8px 14px;border-radius:999px;font-size:13px;font-weight:700;margin-bottom:20px}
+.hero h1{font-size:clamp(42px,6vw,72px);line-height:1.03;letter-spacing:-2px;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--cyan)}
+.hero p{font-size:18px;color:#dbe9fa;max-width:650px;margin-bottom:30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:10px;font-weight:800;font-size:14px;border:1px solid transparent}
+.btn-primary{background:var(--cyan);color:#052044}
+.btn-secondary{background:transparent;color:white;border-color:rgba(255,255,255,.35)}
+.hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:26px;padding:30px;box-shadow:0 25px 60px rgba(0,0,0,.18)}
+.camera-visual{height:310px;border-radius:20px;background:linear-gradient(145deg,#102f58,#06172f);display:grid;place-items:center;position:relative;overflow:hidden}
+.camera-visual:before{content:"";width:185px;height:185px;border-radius:50%;background:radial-gradient(circle,#b9efff 0 7%,#132b4e 8% 18%,#071426 19% 40%,#dbeaf4 41% 48%,#0b1d38 49% 100%);box-shadow:0 0 0 14px #d9e7f0,0 25px 60px rgba(0,0,0,.45)}
+.camera-visual:after{content:"SERVICE • REPAIR • SUPPORT";position:absolute;bottom:18px;left:0;right:0;text-align:center;font-size:11px;letter-spacing:2px;color:#bfeaff}
+.section{padding:82px 0}
+.section.alt{background:var(--light)}
+.section-head{text-align:center;max-width:720px;margin:0 auto 44px}
+.kicker{color:var(--blue);font-weight:800;letter-spacing:2px;font-size:12px;text-transform:uppercase}
+.section h2{font-size:38px;line-height:1.15;color:var(--navy);margin:8px 0 12px}
+.section-head p{color:var(--muted)}
+.notice{background:#eaf7ff;border:1px solid #bfe9ff;border-radius:14px;padding:15px 18px;text-align:center;font-weight:800;color:#07558f;margin-bottom:30px}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:white;border:1px solid var(--border);border-radius:18px;padding:24px;box-shadow:0 10px 28px rgba(7,27,58,.06);transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 35px rgba(7,27,58,.1)}
+.icon{width:48px;height:48px;border-radius:14px;background:#eaf6ff;color:var(--blue);display:grid;place-items:center;font-size:22px;margin-bottom:17px}
+.card h3{color:var(--navy);font-size:19px;margin-bottom:7px}
+.card p{font-size:14px;color:var(--muted)}
+.card ul{list-style:none;margin-top:12px;font-size:13px;color:#43526a}
+.card li{margin:5px 0}.card li:before{content:"✓";color:var(--blue);font-weight:900;margin-right:7px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about-box{background:linear-gradient(145deg,#061735,#0b4f8e);color:white;border-radius:25px;padding:36px;min-height:310px;display:flex;flex-direction:column;justify-content:center}
+.about-box .big{font-size:56px;font-weight:900;color:var(--cyan);line-height:1}
+.about-box p{color:#dbe9fa;margin-top:10px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.check{padding:14px;border:1px solid var(--border);border-radius:12px;font-weight:700;background:white}
+.check span{color:var(--blue);margin-right:7px}
+.lang{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.lang span{padding:7px 11px;border-radius:999px;background:#eef5fb;color:var(--navy);font-weight:700;font-size:12px}
+.contact{background:var(--navy);color:white}
+.contact .section h2{color:white}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.contact-card{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:20px;padding:28px}
+.contact-item{display:flex;gap:14px;align-items:flex-start;margin:18px 0}
+.contact-icon{width:40px;height:40px;flex:none;border-radius:11px;background:rgba(25,199,255,.14);display:grid;place-items:center;color:var(--cyan)}
+.contact-item b{display:block;margin-bottom:2px}.contact-item span{color:#c9d7e8;font-size:14px}
+.contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+footer{background:#041126;color:#9fb0c5;text-align:center;padding:22px;font-size:12px}
+footer strong{color:white}
+@media(max-width:850px){
+ nav{display:none}.menu{display:block}.hero-grid,.about,.contact-grid{grid-template-columns:1fr}.hero{padding-top:65px}
+ .services{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+ .nav{height:68px}.brand span{font-size:15px}.hero h1{font-size:44px}.section{padding:62px 0}
+ .services{grid-template-columns:1fr}.checks{grid-template-columns:1fr}.hero-card{padding:18px}.camera-visual{height:240px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <div class="logo">◉</div>
+      <div><span>NITHISH</span><small>SECURITY SOLUTIONS</small></div>
+    </a>
+    <nav>
+      <a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">CCTV • BIOMETRIC • SERVICE CALLS</div>
+      <h1>Your Safety.<br><em>Our Service.</em></h1>
+      <p>Professional CCTV and biometric service support for homes, offices, factories and shops in Chennai. <strong>Service calls only — no installation.</strong></p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://wa.me/918124219657" target="_blank">WhatsApp Us</a>
+        <a class="btn btn-secondary" href="tel:+918124219657">Call 8124219657</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="camera-visual"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">What we do</div>
+      <h2>CCTV & Biometric Service</h2>
+      <p>Reliable troubleshooting, repair and support for existing security systems.</p>
+    </div>
+    <div class="notice">SERVICE CALLS ONLY • NO INSTALLATION</div>
+    <div class="services">
+      <article class="card">
+        <div class="icon">▣</div><h3>IP Camera Service</h3>
+        <p>Support for existing IP camera systems.</p>
+        <ul><li>Fault diagnosis</li><li>Configuration support</li><li>Repair & troubleshooting</li></ul>
+      </article>
+      <article class="card">
+        <div class="icon">◉</div><h3>Analog Camera Service</h3>
+        <p>Service support for existing analog CCTV setups.</p>
+        <ul><li>Video issue fixing</li><li>DVR/NVR support</li><li>Signal & power checks</li></ul>
+      </article>
+      <article class="card">
+        <div class="icon">⌁</div><h3>WiFi Camera Service</h3>
+        <p>Help with existing wireless camera systems.</p>
+        <ul><li>Connectivity issues</li><li>App support</li><li>Reset & reconnect</li></ul>
+      </article>
+      <article class="card">
+        <div class="icon">◌</div><h3>Biometric Service</h3>
+        <p>Service support for existing biometric devices.</p>
+        <ul><li>Fingerprint systems</li><li>Face recognition</li><li>Attendance & access support</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="about">
+  <div class="container about">
+    <div class="about-box">
+      <div class="big">24/7*</div>
+      <h3>Security Service Support</h3>
+      <p>Professional service calls for CCTV and biometric systems, with a focus on quick response and practical troubleshooting.</p>
+      <div class="lang"><span>English</span><span>தமிழ்</span><span>हिन्दी</span></div>
+    </div>
+    <div>
+      <div class="kicker">Why Nithish</div>
+      <h2>Professional help when your security system needs attention.</h2>
+      <p style="color:var(--muted)">We focus on servicing existing systems rather than installation, helping customers keep their CCTV and biometric equipment working reliably.</p>
+      <div class="checks">
+        <div class="check"><span>✓</span>Service Calls</div>
+        <div class="check"><span>✓</span>Fault Diagnosis</div>
+        <div class="check"><span>✓</span>Repair Support</div>
+        <div class="check"><span>✓</span>Quick Response</div>
+      </div>
+      <p style="font-size:12px;color:var(--muted);margin-top:15px">*Response time depends on service availability and location.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker" style="color:var(--cyan)">Get in touch</div>
+      <h2>We're just a call away.</h2>
+      <p style="color:#c9d7e8">For CCTV and biometric service calls, contact Nithish Security Solutions.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-item"><div class="contact-icon">☎</div><div><b>WhatsApp / Call</b><span>+91 81242 19657</span></div></div>
+        <div class="contact-item"><div class="contact-icon">✉</div><div><b>Email</b><span>nithishkumarv1@gmail.com</span></div></div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://wa.me/918124219657" target="_blank">Chat on WhatsApp</a>
+          <a class="btn btn-secondary" href="mailto:nithishkumarv1@gmail.com">Send Email</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-item"><div class="contact-icon">⌖</div><div><b>Service Address</b><span>No.2/43, 1st Cross Street,<br>Manthoppu Krishnapuram Extension,<br>Ambattur, Chennai - 600053.</span></div></div>
+        <div class="contact-item"><div class="contact-icon">✓</div><div><b>Service Scope</b><span>CCTV & biometric service calls only. No installation.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 <strong>Nithish Security Solutions</strong> · CCTV & Biometric Service Calls Only</footer>
+
+<script>
+function toggleMenu(){
+  const nav=document.querySelector('nav');
+  nav.style.display = nav.style.display==='flex' ? 'none' : 'flex';
+  nav.style.position='absolute'; nav.style.top='68px'; nav.style.right='4%';
+  nav.style.background='white'; nav.style.padding='18px'; nav.style.borderRadius='14px';
+  nav.style.flexDirection='column'; nav.style.boxShadow='0 15px 35px rgba(0,0,0,.12)';
+}
+</script>
+</body>
+</html>
